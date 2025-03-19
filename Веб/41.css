@@ -1,0 +1,187 @@
+/* Общие стили */
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Шапка сайта */
+  .header {
+    background-color: #f0f0f0;
+    padding: 30px 0;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -50px;
+  }
+  
+  .header-top .logo {
+    font-size: 20px;
+    margin-left: -190px;
+  }
+  
+  .header-top .menu {
+    display: flex;
+    margin-left: -120px ;
+  }
+  
+  .header-top .menu a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Основная часть сайта */
+/* banner.css */
+
+.banner {
+    background-image: url("https://i.pinimg.com/736x/a8/da/44/a8da447c5cea0c0e9c30c6308795a2cf.jpg"); /* Замените URL */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust as needed */
+    position: relative; /* For absolute positioning of children */
+    overflow: hidden; /* Prevents animation overflow */
+  }
+  
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  /* Left Column (Buttons) */
+  .banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 250px;
+    margin-left: 600px;
+    
+    height: 100%; /*Important for vertical centering*/
+}
+  
+  
+  .banner-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-align: center;
+    
+  }
+
+  .banner-slogan {
+    text-align: center; /* Center the slogan text */
+    color: white; /* Set slogan color */
+    text-shadow: 2px 2px 4px #000000; /* Add a text shadow for readability */
+    position: absolute; /* Position absolutely */
+    top: 20%; /* Center vertically */
+    left: 48%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Correct centering for absolute positioning */
+    width: 100%; /* Ensures the slogan spans the width of the banner */
+  }
+  .banner-button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+  }
+  
+  /* Right Column (Images) */
+  .banner-right {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    position: relative; /* So images can be absolutely positioned within */
+  }
+  
+  .banner-image {
+    position: absolute;
+    width: 100px; /* Adjust image size */
+    height: auto;
+  }
+  
+  .image1 {
+    top: 20px;
+    left: 30px;
+    animation: rotate 5s linear infinite;  /* Rotating animation */
+  }
+  
+  .image2 {
+    top: 50px;
+    left: 80px;
+    animation: moveUpDown 3s ease-in-out infinite alternate; /* Up-down animation */
+  }
+  
+  /* Animations */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveUpDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px); /* Adjust the distance */
+    }
+  }
+  
+  /* Секция новостей */
+  .news {
+    background-color: #ffffff; /* or some other color */
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .news-item {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .news-item p {
+    margin-bottom: 15px;
+  }
+  
+  .news-item a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #555;
+    color: #555;
+  }
+  
+  /* media queries to make news items responsive*/
+  @media (max-width: 768px) {
+    .news {
+      flex-direction: column;
+      align-items: center;
+    }
+    .news-item {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

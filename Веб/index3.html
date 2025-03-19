@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <form>
+        <h1>Форма заказа товаров</h1>
+        <table border="0px" cellpadding="8" width="600px">
+            <tr>
+                <td align="right">Фамилия: <input type="text" name="surname" type="text" pattern="^[А-Яа-яЁё]{1,1000}" required
+                        oninvalid="setCustomValidity('Имя должно содержать 1-1000 символов и только на русском языке ')"
+                        oninput="setCustomValidity('')" required></td>
+                <th>Доставка</th>
+            </tr>
+            <tr>
+                <td align="right">Пароль: <input type="password" name="pass" minlength="8" maxlength="1000" required></td>
+
+                <th rowspan="2"><input type="radio" name="dostav" value="pochta"> Почтой.
+                    <br>
+                    <input type="radio" name="dostav" value="kyra" > Курьером.
+                    <br>
+                    <input type="radio" name="dostav" value="sam" checked> Самовывоз.
+                    <br>
+                </th>
+            </tr>
+            <tr>
+                <td align="right">Адрес получателя: <input type="email" name="adres" required></td>
+            </tr>
+            <tr>
+                <td align="right">Количество: <input type="number" name="kolvo" max="100" required></td>
+                <td><em>Требуется приходный ордер</em><input type="checkbox" checked></td>
+            </tr>
+            <tr>
+                <td rowspan="2" for="product_name"> Наименование товара
+                    <select id="product_name">
+                        <option value="test">Конфеты</option>
+                        <option value="test">Кукуруза</option>
+                    </select>
+                </td>
+                <th>
+                    Дополнительная информация: <br><textarea name="text" rows="3"></textarea><br>
+                    <input type="submit" />
+                    <input type="reset" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
