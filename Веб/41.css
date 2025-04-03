@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -9,7 +8,6 @@ body {
     margin: 0 auto;
   }
   
-  /* Шапка сайта */
   .header {
     background-color: #f0f0f0;
     padding: 30px 0;
@@ -38,16 +36,13 @@ body {
     color: #333;
   }
   
-  /* Основная часть сайта */
-/* banner.css */
-
 .banner {
-    background-image: url("https://i.pinimg.com/736x/a8/da/44/a8da447c5cea0c0e9c30c6308795a2cf.jpg"); /* Замените URL */
+    background-image: url("https://i.pinimg.com/736x/a8/da/44/a8da447c5cea0c0e9c30c6308795a2cf.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px; /* Adjust as needed */
-    position: relative; /* For absolute positioning of children */
-    overflow: hidden; /* Prevents animation overflow */
+    height: 400px;
+    position: relative;
+    overflow: hidden;
   }
   
   .banner-container {
@@ -55,10 +50,9 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 20px; /* Adjust as needed */
+    padding: 20px;
   }
-  
-  /* Left Column (Buttons) */
+
   .banner-left {
     display: flex;
     flex-direction: column;
@@ -66,9 +60,8 @@ body {
     margin-top: 250px;
     margin-left: 600px;
     
-    height: 100%; /*Important for vertical centering*/
+    height: 100%;
 }
-  
   
   .banner-button {
     display: inline-block;
@@ -77,111 +70,267 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
     text-align: center;
     
   }
 
   .banner-slogan {
-    text-align: center; /* Center the slogan text */
-    color: white; /* Set slogan color */
-    text-shadow: 2px 2px 4px #000000; /* Add a text shadow for readability */
-    position: absolute; /* Position absolutely */
-    top: 20%; /* Center vertically */
-    left: 48%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Correct centering for absolute positioning */
-    width: 100%; /* Ensures the slogan spans the width of the banner */
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    position: absolute; 
+    top: 20%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
   .banner-button:hover {
-    background-color: #2980b9; /* Darker shade on hover */
+    background-color: #2980b9; 
   }
   
-  /* Right Column (Images) */
+  
   .banner-right {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    position: relative; /* So images can be absolutely positioned within */
+    width: 200px;
+    height: 200px;
+    position: relative;
   }
   
   .banner-image {
     position: absolute;
-    width: 100px; /* Adjust image size */
+    width: 100px;
     height: auto;
   }
   
   .image1 {
     top: 20px;
     left: 30px;
-    animation: rotate 5s linear infinite;  /* Rotating animation */
   }
   
   .image2 {
     top: 50px;
     left: 80px;
-    animation: moveUpDown 3s ease-in-out infinite alternate; /* Up-down animation */
   }
   
-  /* Animations */
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes moveUpDown {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-20px); /* Adjust the distance */
-    }
-  }
-  
-  /* Секция новостей */
-  .news {
-    background-color: #ffffff; /* or some other color */
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  
-  .news-item {
-    width: 30%;
-    border: 1px solid #ccc;
-    padding: 15px;
+.news-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.news-section h2 {
     text-align: center;
-  }
-  
-  .news-item img {
-    width: 100%;
-    height: auto;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; 
+}
+
+.news-item {
+    width: 23%; 
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item h3 {
+    margin-top: 0;
     margin-bottom: 10px;
-  }
-  
-  .news-item p {
-    margin-bottom: 15px;
-  }
-  
-  .news-item a {
+}
+
+.news-image-float {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.news-item p {
+    flex-grow: 1;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #555;
-    color: #555;
-  }
-  
-  /* media queries to make news items responsive*/
-  @media (max-width: 768px) {
-    .news {
-      flex-direction: column;
-      align-items: center;
-    }
-    .news-item {
-      width: 80%;
-      margin-bottom: 20px;
-    }
-  }
-  
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Menu Sections */
+.menu-section {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-section-inline .menu-item-inline {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    vertical-align: top; 
+}
+
+.menu-section-inlblock {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.menu-item-inlblock {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-inlblock img {
+    margin-right: 10px;
+}
+
+.float-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px; 
+    width: 400px; 
+    height: auto; 
+}
+
+.inlblock-image{
+    margin-right: 20px;
+    width: 900px; 
+    height: auto;
+}
+.menu-section-flex {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.menu-item-flex {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-flex img {
+  margin-right: 10px;
+}
+
+.flex-image{
+  margin-right: 20px;
+  width: 600px; 
+  height: auto;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left {
+  width: 35%;
+  padding-right: 20px;
+}
+.footer-right{
+  width: 50%;
+  padding-left: 20px;
+}
+
+.footer h3 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  border-radius: 4px;
+}
+.form-group textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.social-links{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+
+}
+.social-links a{
+  color: #fff;
+  text-decoration: none;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: left;
+  color: #ccc;
+}
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 1px solid #555; 
+}
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
