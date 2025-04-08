@@ -105,11 +105,30 @@ body {
   .image1 {
     top: 20px;
     left: 30px;
+    animation: rotate 5s linear infinite;
   }
   
   .image2 {
     top: 50px;
     left: 80px;
+    animation: moveUpDown 3s ease-in-out infinite alternate;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes moveUpDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px); /* Adjust the distance */
+    }
   }
   
 .news-section {
