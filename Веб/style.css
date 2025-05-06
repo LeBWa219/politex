@@ -1,0 +1,319 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+section {
+    padding: 80px 0;
+}
+
+/* Первый блок */
+.first-block {
+    background-color: #000000;
+    color: white;
+    padding: 100px 0;
+    
+}
+
+.first-block h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.timer-container {
+    margin-top: 50px;
+}
+
+.timer-item {
+    text-align: center;
+}
+
+.timer-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.timer-label {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Заказать курс */
+.order-block {
+    background-color: #121212;
+    color: white;
+    padding: 40px 0;
+}
+
+.btn-order {
+    background: radial-gradient(circle, #DF5950, #451046);
+    color: white;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.btn-order:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.stats-item {
+    padding: -3px 0;
+}
+
+.stats-label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ffffff1a;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #DF5950 0%, #451046 100%);
+    border-radius: 4px;
+}
+
+.progress-labels {
+    font-size: 14px;
+    color: #ffffffb3;
+}
+
+@media (max-width: 992px) {
+    .row.align-items-center {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .col-auto.pe-5 {
+        padding-right: 0 !important;
+        width: 100%;
+    }
+    .btn-order {
+        width: 100%;
+    }
+}
+
+/* Чем мы занимаемся */
+.about-section {
+    background-color: rgb(0, 0, 0);
+    padding: 80px 0;
+}
+
+.about-section h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+/* Быстрый старт */
+.fast-start {
+    background-color: #000000;
+    padding: 80px 0;
+    
+}
+
+
+
+.fast-start h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.percent-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+/* Получите профессию */
+.get-profession {
+    background-color: rgb(0, 0, 0);
+    padding: 80px 0;
+}
+
+.get-profession h2 {
+    color: #ffffff;
+}
+
+.prof-card {
+    padding: 30px;
+    height: 100%;
+}
+
+.prof-card i {
+    font-size: 48px;
+    background: radial-gradient(circle, #C89AFC, #7C6AFA);
+    margin-bottom: 20px;
+}
+
+
+.prof-card h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Партнеры */
+.partners {
+    background-color: #000000;
+    padding: 1px 0;
+}
+
+.partners h2 {
+    color: #ffffff;
+}
+
+/* Прогрессбар*/
+.empty-block {
+    background-color: #000000;
+    padding: 80px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.testprog{
+    height: 8px;
+    border-radius: 4px;
+    background-color: #000000;
+    transform: rotate(90deg);
+}
+
+.--bs-columns{
+    color: black;
+}
+
+p{
+    color: white;
+}
+
+
+/* Преподаватели */
+.teachers {
+    background-color: rgb(0, 0, 0);
+    padding: 80px 0;
+}
+
+.teachers h2 {
+    color: #ffffff;
+}
+
+.teacher-card {
+    padding: 30px;
+}
+
+.teacher-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.specialty {
+    color: #e94560;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.bio {
+    font-size: 14px;
+}
+
+/* Подписка */
+.subscribe {
+    background-color: #000000;
+    color: white;
+    padding: 80px 0;
+}
+
+.subscribe h2 {
+    color: white;
+}
+
+.subscribe-form .form-control {
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.btn-subscribe {
+    background-color: #000000;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    padding: 0 25px;
+}
+
+/* Футер */
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 30px 0;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    color: #e94560;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .first-block {
+        padding: 80px 0;
+        text-align: center;
+    }
+    
+    .first-block h1 {
+        font-size: 36px;
+    }
+    
+    .timer-number {
+        font-size: 24px;
+    }
+    
+    .stats-value {
+        font-size: 24px;
+    }
+    
+    .percent-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 18px;
+    }
+}

@@ -1,54 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Саратов</title>
-    <link rel="stylesheet" href="C:\Users\ivanf\Desktop\веб верстка">
+    <title>Курс по сборке ПК</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <h1>Саратов</h1>
-    <p><img src="https://avatars.mds.yandex.net/get-altay/10247017/2a0000019016231ae3fca6e91cd9498bb504/XXL_height"
-            width="300" height="200">
-        <img src="https://avatars.mds.yandex.net/i?id=24b87d8f16a7ccb7eef2b801dbff94f3_l-4600894-images-thumbs&n=13"
-            width="300" height="200">
-    </p>
-    <h2>Коротко о городе</h2>
-    <a>Саратов - это крупный город на юго-востоке европейской части России, на берегу Волги. Известен своей богатой
-        историей, красивой архитектурой (особенно старый город), и как родина многих известных личностей. Это важный
-        промышленный, культурный и образовательный центр.</a>
-    <h2>Названия города</h2>
-    <ol>
-        <li>Сары Тау</li>
-        <li>Саратов</li>
-    </ol>
-    <h2> Известные люди города</h2>
-    <ul>
-        <li>Олег Табаков - актер</li>
-        <li>Владимир Конкин - актер</li>
-        <li>Евгений Миронов - актер</li>
-    </ul>
-    <h2>История города</h2>
-    <a>Саратов ведет свою историю с 1590 года, когда на Волге была основана крепость для защиты юго-восточных рубежей
-        Московского царства. Расположение на важном торговом пути способствовало быстрому развитию города, и уже в XVIII
-        веке он получил статус губернского центра, став административным и торговым узлом.</a>
-    <a>В XIX веке в Саратове произошел промышленный бум, появились крупные предприятия, железная дорога, а также активно
-        развивалась культурная сфера, открылись театр, консерватория и художественный музей. В советское время город
-        стал мощным индустриальным центром, сыгравшим важную роль в годы Великой Отечественной войны.</a>
-    <a>Сегодня Саратов – это крупный город в Поволжье, сочетающий в себе историческое наследие и современные достижения.
-        Он является важным центром промышленности, культуры, образования и науки, привлекающим туристов своей
-        архитектурой и богатой историей. Город продолжает развиваться, сохраняя свою уникальную атмосферу и значимость
-        для региона.</a>
-    <a> Важными факторами развития Саратова стали его выгодное географическое положение на Волге, наличие плодородных
-        земель в окрестностях и трудолюбие его жителей. Саратовцы внесли значительный вклад в развитие российской
-        культуры и науки, дав стране известных писателей, художников, ученых и музыкантов.</a>
+    <!-- Первый блок -->
+    <section class="first-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Первый курс<br>по компьютерной сборке</h1>
+                    <div class="grid text-center">
+                    <div class="timer-container">
+                        <div class="row">
+                            <div class="col-3 timer-item">
+                                <div class="timer-number">18</div>
+                                <div class="timer-label">Дней</div>
+                            </div>
+                            <div class="col-3 timer-item">
+                                <div class="timer-number">18</div>
+                                <div class="timer-label">Часов</div>
+                            </div>
+                            <div class="col-3 timer-item">
+                                <div class="timer-number">18</div>
+                                <div class="timer-label">Минут</div>
+                            </div>
+                            <div class="col-3 timer-item">
+                                <div class="timer-number">18</div>
+                                <div class="timer-label">Секунд</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <a href="index2.html" target="_blank">
-        <p><img src="https://avatars.mds.yandex.net/i?id=1d3707882e7adfc5a6cf01da285a4d8c_l-5295477-images-thumbs&n=13"
-                width="300" height="200"></p>
-    </a>
+    <section class="order-block">
+        <div class="container">
+            <!-- Единый ряд для всех элементов -->
+            <div class="row align-items-center">
+                <!-- Колонка для кнопки -->
+                <div class="col-auto pe-5">
+                    <button class="btn btn-order">Заказать курс</button>
+                </div>
+
+                <!-- Колонка для статистики -->
+                <div class="col">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="stats-group">
+                                <div class="stats-item">
+                                    <div class="stats-label">Учеников всего: 200</div>
+                                </div>
+                                <div class="stats-item mt-4">
+                                    <div class="stats-label">Успешно закончили курс: 190</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="stats-item">
+                                <div class="stats-label">Заработано учениками: 400 000₽</div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar" style="width: 40%"></div>
+                                </div>
+                                <div class="progress-labels d-flex justify-content-between mt-2">
+                                    <span>0</span>
+                                    <span>1 000 000₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Чем мы занимаемся -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/pc-build.jpg" alt="Сборка ПК" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h2>Чем мы занимаемся?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dicium vestibulum mi et sed nunc, orci fermentum vestibulum, nonis. E nascus, adipiscing sapien sem senescus praesent aenean consequat. Aenean facilisit turpis aliquet ringilla. Nam sem felis sed interdum feugiat matte elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placeeu nisi, lobortis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Быстрый старт -->
+    <section class="fast-start">
+        <div class="container">
+            <h2 class="text-start mb-4">Быстрый старт</h2>
+            <p class="text-start  mb-5">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер.</p>
+            
+            <div class="row text-center percentages">
+                <div class="square-progress w-100" style="height: 100%;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="percent-circle">100%</div>
+                    
+                </div>
+                
+                <div class="col-md-3">
+                    <div class="percent-circle">75%</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="percent-circle">50%</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="percent-circle">Итог</div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
+                </div>
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nenas eget velit quisque exosmens nere tortor. Vela, volutpat ogestas frappia me portetur tempus. Plexeent du.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Получите профессию -->
+    <section class="get-profession">
+        <div class="container">
+            <h2 class="text-center mb-5">Получите профессию прямо сейчас</h2>
+            
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="prof-card">
+                        <i class="fas fa-laptop-code "></i>
+                        <h3>Только практические навыки в работе</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="prof-card">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Работа на самом современном оборудовании</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="prof-card">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Сертификация по окончании обучения</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Партнеры -->
+       <!-- <Партнеры> -->
+       <section class="partners">
+        <div class="container">
+            <p class="fs-1"><h2 class="text-start mb-5">Партнеры - топовые бренды</h2></p>
+            <div class="row align-items-center">
+                <div class="col-3 text-center p-4">
+                    <img src="msi.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="nvidia.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="radeon.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="amd2.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="intel.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="asus.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="king.png" alt="MSI" class="img-fluid">
+                </div>
+                <div class="col-3 text-center p-4">
+                    <img src="logitlog.png" alt="MSI" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- прогрессбар -->
+    <section class="empty-block">
+        <div class="container">
+            <h2 class="text-center mb-5">Программа обучения</h2>
+            <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="height: 6px;">
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Преподаватели -->
+    <section class="teachers">
+        <div class="container">
+            <h2 class="text-center mb-5">Ваши преподаватели</h2>
+            
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="teacher-card">
+                        <img src="images/teacher1.jpg" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
+                        <h3>Дмитрий Иванов</h3>
+                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="bio">Биография</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="teacher-card">
+                        <img src="images/teacher2.jpg" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
+                        <h3>Дмитрий Иванов</h3>
+                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="bio">Биография</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="teacher-card">
+                        <img src="images/teacher3.jpg" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
+                        <h3>Дмитрий Иванов</h3>
+                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="bio">Биография</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Подписка -->
+    <section class="subscribe">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Статьи каждую неделю</h2>
+                    <p class="mb-5">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</p>
+                    
+                    <form class="subscribe-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                            <button class="btn btn-subscribe" type="submit">Подписаться</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center py-4">
+            <div class="social-icons mb-3">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-0">© Все права защищены, 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
