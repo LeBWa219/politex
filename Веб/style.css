@@ -17,12 +17,14 @@ section {
     padding: 80px 0;
 }
 
+.page{
+    background-image: url(bg1.jpg);
+}
+
 /* Первый блок */
 .first-block {
-    background-color: #000000;
     color: white;
-    padding: 100px 0;
-    
+    padding: 230px 0;
 }
 
 .first-block h1 {
@@ -118,13 +120,18 @@ section {
 /* Чем мы занимаемся */
 .about-section {
     background-color: rgb(0, 0, 0);
-    padding: 80px 0;
+    padding: 200px 0;
 }
 
-.about-section h2 {
-    margin-bottom: 30px;
+.about-section h1 {
+    margin-bottom: 45px;
     color: #ffffff;
 }
+
+.about-section p{
+    color: white;
+}
+
 
 /* Быстрый старт */
 .fast-start {
