@@ -9,87 +9,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<!--Navbar-->   
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#000000;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Bootstrap" width="40" height="40">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Главная</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Курсы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Расписание</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Преподаватели</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Рассылка</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex align-items-center">
-            <button data-mdb-ripple-init type="button" class="btn btn-primary me-3" style="
-            background: radial-gradient(circle, #C89AFC, #7C6AFA);
-            color: white;
-            padding: 10px 30px;
-            border: none;
-            border-radius: 50px;
-            font-family: 'Roboto', sans-serif;
-            white-space: nowrap;
-            transition: transform 0.3s ease;
-            width: 183px;
-            height: 44px;"
-            >
-              Зайти в кабинет
+<!--Navbar-->  
+    <div class="page"> 
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="Bootstrap" width="40" height="40">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-    </nav>
-    <!-- Первый блок -->
-    <section class="first-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Первый курс<br>по компьютерной сборке</h1>
-                    <div class="grid text-center">
-                    <div class="timer-container">
-                        <div class="row">
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Дней</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Часов</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Минут</div>
-                            </div>
-                            <div class="col-3 timer-item">
-                                <div class="timer-number">18</div>
-                                <div class="timer-label">Секунд</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Курсы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Расписание</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Преподаватели</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Рассылка</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Контакты</a>
+                </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <button data-mdb-ripple-init type="button" class="btn btn-primary me-3" style="
+                background: radial-gradient(circle, #C89AFC, #7C6AFA);
+                color: white;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 50px;
+                font-family: 'Roboto', sans-serif;
+                white-space: nowrap;
+                transition: transform 0.3s ease;
+                width: 183px;
+                height: 44px;"
+                >
+                Зайти в кабинет
+                </button>
+            </div>
+        </nav>
+        <!-- Первый блок -->
+        <section class="first-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Первый курс<br>по компьютерной сборке</h1>
+                        <div class="grid text-center">
+                        <div class="timer-container">
+                            <div class="row">
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Дней</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Часов</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Минут</div>
+                                </div>
+                                <div class="col-3 timer-item">
+                                    <div class="timer-number">18</div>
+                                    <div class="timer-label">Секунд</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <section class="order-block">
         <div class="container">
             <!-- Единый ряд для всех элементов -->
@@ -138,10 +139,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="images/pc-build.jpg" alt="Сборка ПК" class="img-fluid">
+                    <img src="about__img.png" alt="Сборка ПК" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <h2>Чем мы занимаемся?</h2>
+                    <h1>Чем мы занимаемся?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et feugiat elit augue in suspendisse egestas. Dicium vestibulum mi et sed nunc, orci fermentum vestibulum, nonis. E nascus, adipiscing sapien sem senescus praesent aenean consequat. Aenean facilisit turpis aliquet ringilla. Nam sem felis sed interdum feugiat matte elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu malesuada arcu interdum placeeu nisi, lobortis.</p>
                 </div>
             </div>
