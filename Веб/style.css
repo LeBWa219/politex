@@ -1,9 +1,11 @@
-/* Общие стили */
+\/* Общие стили */
 body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
     line-height: 1.6;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -19,6 +21,8 @@ section {
 
 .page{
     background-image: url(bg1.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
 }
 
 /* Первый блок */
@@ -334,6 +338,17 @@ section {
     font-size: 14px;
 }
 
+.btn-bio {
+    border: 1px solid #ffffff; 
+    color: white;
+    padding: 10px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+}
+
 /* Подписка */
 .subscribe {
     background-color: #000000;
@@ -347,15 +362,18 @@ section {
 
 .subscribe-form .form-control {
     height: 50px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 50px 0 0 50px;
     border: none;
 }
 
 .btn-subscribe {
-    background-color: #000000;
+    background: radial-gradient(circle, #DF5950, #451046);
+    font-weight: 600;
+    border: none;
     color: white;
-    border-radius: 0 5px 5px 0;
-    padding: 0 25px;
+    border-radius: 0px 50px 50px 0px;
+    padding: 13.5px 25px;
+    transition: transform 0.3s ease;
 }
 
 /* Футер */
