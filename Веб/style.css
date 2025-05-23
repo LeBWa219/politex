@@ -77,14 +77,14 @@ section {
 }
 
 .stats-item {
-    padding: -3px 0;
+    padding: -3px 20px;
 }
 
 .stats-label {
-    font-size: 16px;
-    color: #ffffff;
+     font-size: 16px; 
+    color: #5a5a5a;
     margin-bottom: 8px;
-    font-weight: 700;
+     font-weight: 550;
 }
 
 .progress {
@@ -167,14 +167,66 @@ section {
     color: #ffffff;
 }
 
-.partners {
+.partners 
+{
     background-color: #000000;
-    padding: 1px 0;
 }
 
-.partners h2 {
-    color: #ffffff;
+.logo_partners 
+{
+    width: 95.07px;
+    height: auto;
 }
+
+.logo_text_partners 
+{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+table 
+{
+    width: 1200px;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 60px;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: none;
+}
+table tr td:last-child,
+table tr th:last-child {
+    border-right: none;
+}
+table tr:first-child td,
+table tr:first-child th {
+    border-top: none;
+}
+table tr:last-child td,
+table tr:last-child th {
+    border-bottom: none;
+}
+
+table td 
+{
+    padding: 30px 30px 30px 30px;
+    border: 0.1px solid rgba(255,255,255,0.3);
+}  
+
+.image_partners 
+{
+    width: 250px; 
+    height: 130px; 
+}
+
 
 .main-timeline {
     position: relative;
@@ -414,6 +466,11 @@ section {
     }
 }
 
+.btn-primary:hover{
+     opacity: 0;
+    transition: opacity 1s ease 0.5s;
+}
+
 @media (max-width: 600px) {
     .main-timeline::after {
         left: 31px;
@@ -444,4 +501,135 @@ section {
     .teacher-card {
         padding: 15px;
     }
+    .prepodi{
+        text-align: center;
+    }
+    .partners{
+        font-size: 19px;
+    }
 }
+@media(min-width: 1440px) and (max-width: 1700px) 
+{
+ .partners 
+    {
+        padding: 100px 100px;
+    }
+
+    table
+    {
+        width: 80%;
+        margin: 0px 10%;
+    }
+}
+
+
+@media(min-width: 1280px) and (max-width: 1439px) 
+{
+.partners {
+        padding: 100px 20px;
+    }
+    table{
+        width: 80%;
+        margin: 0px 10%;
+    }
+}
+
+
+@media(min-width: 960px) and (max-width: 1279px) 
+{
+ table{
+        width: 80%;
+        margin: 0px 10%;
+    }
+    .partners {
+        padding: 100px 20px;
+    }
+    .image_partners{
+        width: 100%;
+    }
+    table td {
+        padding: 5px;
+        border: 0.1px solid rgba(255,255,255,0.3);
+    }  
+}
+
+
+@media (min-width:800px) and (max-width: 959px)
+{
+ table{
+        width: 80%;
+        margin: 0px 10%;
+    }
+    .partners {
+        padding: 100px 20px;
+    }
+    .image_partners{
+        width: 100%;
+    }
+    table td {
+        padding: 5px;
+        border: 0.1px solid rgba(255,255,255,0.3);
+    }  
+}
+
+
+
+@media(min-width: 600px) and (max-width: 800px)
+{
+ table{
+        width: 80%;
+        margin: 0px 10%;
+    }
+    .partners {
+        padding: 100px 20px;
+    }
+    .logo_text_partners{
+        font-size: 35px;
+    }
+    .programm .text2{
+        font-size: 35px;
+    }
+    .programm img{
+        width: 80px;
+        height: auto;
+    }
+    .image_partners{
+        width: 100%;
+    }
+    .logo_partners{
+        width: 70px;
+    }
+}
+
+
+
+@media(max-width: 599px)
+{
+ table{
+        width: 100%;
+        margin: 0px 0%;
+    }
+    .partners {
+        padding: 100px 20px 0px 20px;
+        text-align: center;
+    }
+    .logo_text_partners{
+        font-size: 30px;
+    }
+    .programm .text2{
+        font-size: 30px;
+    }
+    .programm img{
+        width: 80px;
+        height: auto;
+    }
+    .image_partners{
+        width: 100%;
+        height: 80%;
+    }
+    .logo_partners{
+        width: 70px;
+    }
+}
+
+
