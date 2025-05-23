@@ -11,10 +11,10 @@
 <body>
 <!--Navbar-->  
     <div class="page"> 
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" >
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="Bootstrap" width="40" height="40">
+                    <img src="logo.png"  alt="Bootstrap" width="40" height="40" style="margin-left: 50px;">
                 </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
                 <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
                 </li>
                 </ul>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center" style="margin-right: 50px;">
                 <button data-mdb-ripple-init type="button" class="btn btn-primary me-3" style="
                 background: radial-gradient(circle, #C89AFC, #7C6AFA);
                 color: white;
@@ -52,7 +52,8 @@
                 white-space: nowrap;
                 transition: transform 0.3s ease;
                 width: 183px;
-                height: 44px;"
+                height: 44px;
+                "
                 >
                 Зайти в кабинет
                 </button>
@@ -60,32 +61,28 @@
         </nav>
         <!-- Первый блок -->
          <a id="glavn"></a>
-        <section class="first-block">
+         <section class="first-block">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Первый курс<br>по компьютерной сборке</h1>
-                        <div class="grid text-center">
-                        <div class="timer-container">
-                            <div class="row">
-                                <div class="col-3 timer-item">
-                                    <div class="timer-number">18</div>
-                                    <div class="timer-label">Дней</div>
-                                </div>
-                                <div class="col-3 timer-item">
-                                    <div class="timer-number">18</div>
-                                    <div class="timer-label">Часов</div>
-                                </div>
-                                <div class="col-3 timer-item">
-                                    <div class="timer-number">18</div>
-                                    <div class="timer-label">Минут</div>
-                                </div>
-                                <div class="col-3 timer-item">
-                                    <div class="timer-number">18</div>
-                                    <div class="timer-label">Секунд</div>
-                                </div>
+                        <div class="timer-container" style="display: flex; gap: 15px; margin-top: 20px;">
+                            <div class="timer-item" style="background-color: #2e2e2e; padding: 15px 30px; text-align: center; min-width: 80px;">
+                                <div class="timer-number" style="color: white; font-size: 26px; font-weight: bold;">18</div>
+                                <div class="timer-label" style="color: white; font-size: 14px;">Дней</div>
                             </div>
-                        </div>
+                            <div class="timer-item" style="background-color: #2e2e2e; padding: 15px 30px;  text-align: center; min-width: 80px;">
+                                <div class="timer-number" style="color: white; font-size: 26px; font-weight: bold;">18</div>
+                                <div class="timer-label" style="color: white; font-size: 14px;">Часов</div>
+                            </div>
+                            <div class="timer-item" style="background-color: #2e2e2e; padding: 15px 30px; text-align: center; min-width: 80px;">
+                                <div class="timer-number" style="color: white; font-size: 26px; font-weight: bold;">18</div>
+                                <div class="timer-label" style="color: white; font-size: 14px;">Минут</div>
+                            </div>
+                            <div class="timer-item" style="background-color: #2e2e2e; padding: 15px 30px; text-align: center; min-width: 80px;">
+                                <div class="timer-number" style="color: white; font-size: 26px; font-weight: bold;">18</div>
+                                <div class="timer-label" style="color: white; font-size: 14px;">Секунд</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,28 +91,27 @@
     </div>
     <section class="order-block">
         <div class="container">
-            <!-- Единый ряд для всех элементов -->
             <div class="row align-items-center">
-                <!-- Колонка для кнопки -->
                 <div class="col-auto pe-5">
                     <button class="btn btn-order">Заказать курс</button>
                 </div>
 
-                <!-- Колонка для статистики -->
                 <div class="col">
                     <div class="row justify-content-between">
                         <div class="col-md-5">
                             <div class="stats-group">
                                 <div class="stats-item">
-                                    <div class="stats-label">Учеников всего: 200</div>
+                                    <span class="stats-label me-5">Учеников всего:</span>
+                                        <span style="color: white; margin-left: 73px;" class="stats-label">200</span>
                                 </div>
                                 <div class="stats-item mt-4">
-                                    <div class="stats-label">Успешно закончили курс: 190</div>
+                                     <span class="stats-label me-5">Успешно закончили курс:</span>
+                                        <span style="color: white;" class=" stats-label  ">190</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <div class="stats-item">
                                 <div class="stats-label">Заработано учениками: 400 000₽</div>
                                 <div class="progress mt-3">
@@ -135,7 +131,7 @@
 
 
 
-    <!-- Чем мы занимаемся -->
+
     <section class="about-section">
         <div class="container">
             <div class="row align-items-center">
@@ -150,14 +146,14 @@
         </div>
     </section>
     
-    <!-- Быстрый старт -->
+
      <a id="kyrs"></a>
     <section class="fast-start">
         <div class="container">
-            <h1 rel="home" ><img src="start.png"/><span class="text-center">Быстрый старт</span></h1>
-            <p class="text-start mb-5" style="color: #e4e4e4;">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер.</p>
-            
-            <!-- Добавленные слитые квадратные блоки с градиентом и подписями -->
+            <h1 class="mb-5" rel="home" ><img class="me-5" src="start.png"/><span class="text-center">Быстрый старт</span></h1>
+            <p class="text-start" style="color: #686868;">Больше 90% учеников прошли полный курс и смогли</p>
+            <p class="text-start mb-5 lh-1" style="color: #686868;">собрать свой первый компьютер.</p>
+
             <div class="merged-blocks-container mb-5">
                 <div class="row-merged-squares">
                     <div class="col-md-3 p-0 position-relative">
@@ -231,7 +227,7 @@
         
         
         
-        /* Соединительная линия */
+
         .row-merged-squares::after {
           content: '';
           position: absolute;
@@ -254,7 +250,7 @@
         font-size: 24px;
         position: relative;
         transition: all 0.3s ease;
-        margin-top: 50px; /* Отступ для подписи */
+        margin-top: 50px; 
     }
     
     .merged-block2 {
@@ -268,7 +264,7 @@
         font-size: 24px;
         position: relative;
         transition: all 0.3s ease;
-        margin-top: 50px; /* Отступ для подписи */
+        margin-top: 50px; 
     }
     .merged-block3 {
         height: 50px;
@@ -281,7 +277,7 @@
         font-size: 24px;
         position: relative;
         transition: all 0.3s ease;
-        margin-top: 50px; /* Отступ для подписи */
+        margin-top: 50px; 
     }
     
     .merged-block4 {
@@ -295,10 +291,9 @@
         font-size: 24px;
         position: relative;
         transition: all 0.3s ease;
-        margin-top: 50px; /* Отступ для подписи */
+        margin-top: 50px; 
     }
 
-    /* Стили для подписей над блоками */
     .block-label {
         top: 0;
         display: flex;
@@ -314,7 +309,6 @@
         white-space: nowrap;
     }
     
-    /* Эффект разделения между блоками */
     .merged-block:not(:last-child)::after {
         content: '';
         position: absolute;
@@ -333,15 +327,11 @@
             margin-top: 25px;
         }
         
-        .block-label {
-            font-size: 14px;
-        }
     }
 
         </style>
     </section>
 
-    <!-- Получите профессию -->
     <section class="get-profession">
         <div class="container">
             <h2 class="text-center mb-5">Получите профессию прямо сейчас</h2>
@@ -350,21 +340,24 @@
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
                         <img class="mb-5" src="icon-1.png" alt="icon1">
-                        <h3>Только практические навыки в работе</h3>
+                        <h3  class="lh-1">Только практические </h3>
+                        <h3 style="margin-top: -12.5px;">навыки в работе</h3>
                         <p style="color: #e4e4e4;;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
                         <img  class="mb-5" src="icon-2.png" alt="icon2">
-                        <h3>Работа на самом современном оборудовании</h3>
+                        <h3 class="">Работа на самом</h3>
+                        <h3 style="margin-top: -12.5px;" class="">современном оборудовании</h3>
                         <p style="color: #e4e4e4;;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="prof-card">
                         <img  class="mb-5" src="icon-3.png" alt="icon3">
-                        <h3>Сертификация по окончании обучения</h3>
+                        <h3>Сертификация</h3>
+                        <h3 style="margin-top: -12.5px;">по окончании обучения</h3>
                         <p style="color: #e4e4e4;;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nesta eget velit quisque accumsan amet tortor. Velt, volutpat egestas fringilla mi porttitor tempus. Placent dui.</p>
                     </div>
                 </div>
@@ -372,41 +365,45 @@
         </div>
     </section>
 
-    <!-- Партнеры -->
-       <!-- <Партнеры> -->
-       <section class="partners">
-        <div class="container">
-            <p class="fs-1"><h2 rel="home" ><img src="partners.png"/><span> Партнеры - топовые бренды</span></h2>
-            <div class="row align-items-center">
-                <div class="col-3 text-center p-4">
-                    <img src="msi.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="nvidia.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="radeon.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="amd2.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="intel.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="asus.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="king.png" alt="MSI" class="img-fluid">
-                </div>
-                <div class="col-3 text-center p-4">
-                    <img src="logitlog.png" alt="MSI" class="img-fluid">
-                </div>
-            </div>
+       <div class="partners">
+        <div>
+            <p class="m"><img src="partners.png" alt="" class="logo_partners">
+                <span class="logo_text_partners">Партнеры - топовые бренды</span>
+            </p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="msi.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="radeon.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="logitlog.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="amd2.png" alt="" class="image_partners">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="asus.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="king.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="nvidia.png" alt="" class="image_partners">
+                    </td>
+                    <td>
+                        <img src="intel.png" alt="" class="image_partners">
+                    </td>
+                </tr>
+            </table>
         </div>
-    </section>
+    </div>
 
-    <!-- прогрессбар -->
+
      <a id="rasp"></a>
     <section style="background-color: #000000;">
         <div class="text-center" >
@@ -422,8 +419,9 @@
               <div class="card-tl">
                 <div class="card-body p-4 text-end">
                   <h5>Неделя №1</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
+                        которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -431,8 +429,9 @@
               <div class="card-tl">
                 <div class="card-body p-4">
                   <h5>Неделя №2</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
+                        которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -440,8 +439,9 @@
               <div class="card-tl">
                 <div class="card-body p-4 text-end">
                   <h5>Неделя №3</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
+                        которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -449,8 +449,9 @@
               <div class="card-tl">
                 <div class="card-body p-4">
                   <h5>Неделя №4</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                  <p class="mb-0">
+                      которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -458,8 +459,9 @@
               <div class="card-tl">
                 <div class="card-body p-4 text-end">
                   <h5>Неделя №5</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
+                        которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -467,8 +469,9 @@
               <div class="card-tl">
                 <div class="card-body p-4">
                   <h5>Неделя №6</h5>
-                  <p class="mb-0">Красивая часть курса,
-                    которая помогает в успехе</p>
+                  <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
+                        которая помогает в успехе</p>
                 </div>
               </div>
             </div>
@@ -476,7 +479,8 @@
                 <div class="card-tl">
                   <div class="card-body p-4 text-end">
                     <h5>Неделя №7</h5>
-                    <p class="mb-0">Красивая часть курса,
+                    <p class="mb-0">Красивая часть курса,</p>
+                    <p class="mb-0">
                         которая помогает в успехе</p>
                   </div>
                 </div>
@@ -485,16 +489,15 @@
         </div>
       </section>
 
-    <!-- Преподаватели -->
      <a id="prepd"></a>
     <section class="teachers">
         <div class="container">
             <div class="row align-items-center mb-5">
                 <div class="col-auto"> 
-                    <img src="Ellipse 1 (Stroke).png" >
+                    <img src="teach.png" >
                 </div>
                 <div class="col"> 
-                    <h2 class="m-0">Ваши преподаватели</h2>
+                    <h2 class="prepodi m-0">Ваши преподаватели</h2>
                 </div>
             </div>
     
@@ -503,7 +506,7 @@
                     <div class="teacher-card">
                         <img src="tch1.png" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
                         <h3>Дмитрий Иванов</h3>
-                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="specialty" style="color: #686868;">Специалист по видеокартам</p>
                         <button class="btn btn-bio">Биография</button>
                     </div>
                 </div>
@@ -511,7 +514,7 @@
                     <div class="teacher-card">
                         <img src="tch2.png" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
                         <h3>Дмитрий Иванов</h3>
-                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="specialty" style="color: #686868;">Специалист по видеокартам</p>
                         <button class="btn btn-bio">Биография</button>
                     </div>
                 </div>
@@ -519,14 +522,13 @@
                     <div class="teacher-card">
                         <img src="tch3.png" alt="Дмитрий Иванов" class="img-fluid rounded-circle mb-3">
                         <h3>Дмитрий Иванов</h3>
-                        <p class="specialty">Специалист по видеокартам</p>
+                        <p class="specialty" style="color: #686868;">Специалист по видеокартам</p>
                         <button class="btn btn-bio">Биография</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Подписка -->
      <a id="rassil"></a>
     <section class="subscribe">
         <div class="container">
@@ -547,7 +549,7 @@
     <footer class="footer">
         <a id="konta"></a>
         <div class="container text-center py-4">
-            <div class="soc d-flex justify-content-center">
+            <div class="soc d-flex justify-content-center" style="margin-top: -100px;">
                 <img src="vk.png" alt="">
                 <img src="youtube.png" alt="">
                 <img src="facebook.png" alt="">
