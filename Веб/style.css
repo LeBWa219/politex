@@ -23,6 +23,20 @@ section {
     background-size: cover;
 }
 
+.desktop-btn {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.desktop-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.navbar-brand{
+    margin-left: 50px;
+}
+
 .first-block {
     color: white;
     padding: 230px 0;
@@ -174,6 +188,7 @@ section {
 
 .logo_partners 
 {
+    margin-left: 200px;
     width: 95.07px;
     height: auto;
 }
@@ -191,7 +206,8 @@ table
     width: 1200px;
     border-collapse: collapse;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 330px;
+    align-items: center;
     margin-top: 60px;
     border: none;
     outline: 0;
@@ -412,7 +428,7 @@ table td
     margin: 50px 0px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
     .row.align-items-center {
         flex-direction: column;
         gap: 30px;
@@ -434,7 +450,18 @@ table td
     .submit-btn {
         width: 30%;
     }
+    .navbar-brand {
+        margin-left: 0 !important;
+        padding-left: 15px;
+    }
+    
+    .navbar-brand img {
+        margin-left: 0 !important;
+    }
+    
 }
+
+
 
 @media (max-width: 768px) {
     section {
@@ -464,6 +491,7 @@ table td
     .subscribe h2 {
         font-size: 36px;
     }
+    
 }
 
 .btn-primary:hover{
@@ -574,40 +602,11 @@ table td
 
 
 
-@media(min-width: 600px) and (max-width: 800px)
+/* @media(min-width: 600px) and (max-width: 800px)
 {
  table{
         width: 80%;
         margin: 0px 10%;
-    }
-    .partners {
-        padding: 100px 20px;
-    }
-    .logo_text_partners{
-        font-size: 35px;
-    }
-    .programm .text2{
-        font-size: 35px;
-    }
-    .programm img{
-        width: 80px;
-        height: auto;
-    }
-    .image_partners{
-        width: 100%;
-    }
-    .logo_partners{
-        width: 70px;
-    }
-}
-
-
-
-@media(max-width: 599px)
-{
- table{
-        width: 100%;
-        margin: 0px 0%;
     }
     .partners {
         padding: 100px 20px 0px 20px;
@@ -617,7 +616,7 @@ table td
         font-size: 30px;
     }
     .programm .text2{
-        font-size: 30px;
+        font-size: 35px;
     }
     .programm img{
         width: 80px;
@@ -628,8 +627,43 @@ table td
         height: 80%;
     }
     .logo_partners{
-        width: 70px;
+        width: 65px;
+
     }
+    
+} */
+
+
+
+@media(max-width: 1200px)
+{
+ table{
+        width: 100%;
+        margin: 0px 0%;
+    }
+    .partners {
+        padding: 100px 20px 0px 20px;
+        text-align: center;
+    }
+    .logo_text_partners{
+        font-size: 27px;
+    }
+    .programm .text2{
+        font-size: 35px;
+        
+    }
+    .programm img{
+        width: 80px;
+        height: auto;
+    }
+    .image_partners{
+        width: 100%;
+        height: 80%;
+    }
+    .logo_partners{
+        width: 65px;
+        position: absolute;
+        right: 310px;
+    }
+
 }
-
-
