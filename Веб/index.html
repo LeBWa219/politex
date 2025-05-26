@@ -11,52 +11,70 @@
 <body>
 <!--Navbar-->  
     <div class="page"> 
-        <nav class="navbar navbar-expand-lg navbar-dark" >
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png"  alt="Bootstrap" width="40" height="40" style="margin-left: 50px;">
+                    <img src="logo.png" alt="Логотип" width="40" height="40" class="mobile-logo">
                 </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#glavn">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#kyrs">Курсы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#rasp">Расписание</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#prepd">Преподаватели</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#rassil">Рассылка</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#konta">Контакты</a>
-                </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center" style="margin-right: 50px;">
-                <button data-mdb-ripple-init type="button" class="btn btn-primary me-3" style="
-                background: radial-gradient(circle, #C89AFC, #7C6AFA);
-                color: white;
-                padding: 10px 30px;
-                border: none;
-                border-radius: 50px;
-                font-family: 'Roboto', sans-serif;
-                white-space: nowrap;
-                transition: transform 0.3s ease;
-                width: 183px;
-                height: 44px;
-                "
-                >
-                Зайти в кабинет
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#glavn">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#kyrs">Курсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#rasp">Расписание</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#prepd">Преподаватели</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#rassil">Рассылка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#konta">Контакты</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Кнопка для мобильных -->
+                    <div class="d-lg-none text-center my-3">
+                        <button type="button" class="btn btn-primary mobile-btn" style="
+                            background: radial-gradient(circle, #C89AFC, #7C6AFA);
+                            color: white;
+                            padding: 10px 30px;
+                            border: none;
+                            border-radius: 50px;
+                            font-family: 'Roboto', sans-serif;
+                            width: 183px;
+                            height: 44px;
+                        ">
+                            Зайти в кабинет
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Кнопка для десктопа -->
+                <div class="d-none d-lg-flex align-items-center" style="margin-right: 50px;">
+                    <button type="button" class="btn btn-primary desktop-btn" style="
+                        background: radial-gradient(circle, #C89AFC, #7C6AFA);
+                        color: white;
+                        padding: 10px 30px;
+                        border: none;
+                        border-radius: 50px;
+                        font-family: 'Roboto', sans-serif;
+                        white-space: nowrap;
+                        transition: transform 0.3s ease;
+                        width: 183px;
+                        height: 44px;
+                    ">
+                        Зайти в кабинет
+                    </button>
+                </div>
             </div>
         </nav>
         <!-- Первый блок -->
@@ -367,8 +385,8 @@
 
        <div class="partners">
         <div>
-            <p class="m"><img src="partners.png" alt="" class="logo_partners">
-                <span class="logo_text_partners">Партнеры - топовые бренды</span>
+            <p><img src="partners.png" alt="" class="logo_partners">
+                <span class="logo_text_partners ">Партнеры - топовые бренды</span>
             </p>
             <table>
                 <tr>
@@ -376,27 +394,27 @@
                         <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="radeon.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="logitlog.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="amd2.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="asus.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="king.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="nvidia.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                     <td>
-                        <img src="intel.png" alt="" class="image_partners">
+                        <img src="msi.png" alt="" class="image_partners">
                     </td>
                 </tr>
             </table>
@@ -407,7 +425,7 @@
      <a id="rasp"></a>
     <section style="background-color: #000000;">
         <div class="text-center" >
-            <img class="mb-5" src="timeline.png">
+            <img class="mb-5 mt-5" src="timeline.png">
         </div>
         
         <h1 class="text-center mb-5" >Программа обучения </h1>
