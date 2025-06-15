@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-theme .header {
+    background-color: #222;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a4bc9;
+}
+
+.user-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.username:hover {
+    background-color: #f0f0f0;
+}
+
+.dark-theme .username:hover {
+    background-color: #333;
+}
+
+.theme-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dark-theme .theme-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
+    display: none;
+}
+
+.results-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: none;
+}
+
+.dark-theme .results-popup {
+    background-color: #222;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dark-theme .popup-header {
+    border-bottom-color: #444;
+}
+
+.popup-title {
+    font-weight: bold;
+}
+
+.close-popup {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-container, 
+.test-container, 
+.result-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dark-theme .welcome-container,
+.dark-theme .test-container,
+.dark-theme .result-container {
+    background-color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a4bc9;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #7C6AFA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #5a4bc9;
+}
+
+.test-container {
+    display: none;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dark-theme .question {
+    border-color: #444;
+}
+
+.question-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-theme .option {
+    border-color: #444;
+}
+
+.option.selected {
+    background-color: #e6eeff;
+    border-color: #7C6AFA;
+}
+
+.test-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.result-container {
+    display: none;
+}
+
+.result-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.correct {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.incorrect {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}

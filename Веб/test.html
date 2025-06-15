@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на знание компьютеров</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Тест Знаний</div>
+        <div class="user-info">
+            <div class="username" id="usernameDisplay">Гость</div>
+            <button class="theme-btn" id="themeToggle">Тёмная тема</button>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    
+    <div class="results-popup" id="resultsPopup">
+        <div class="popup-header">
+            <div class="popup-title">Ваши результаты</div>
+            <button class="close-popup" id="closePopup">&times;</button>
+        </div>
+        <div class="popup-results" id="popupResults">
+            <p>Вы еще не проходили тест</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="welcome-container" id="welcomeContainer">
+            <h1>Добро пожаловать!</h1>
+            <div class="form-group">
+                <label for="userName">Представьтесь, пожалуйста:</label>
+                <input type="text" id="userName" placeholder="Ваше имя">
+            </div>
+            <button class="btn" id="startBtn">Начать тестирование</button>
+        </div>
+
+        <div class="test-container" id="testContainer">
+            <h2>Тест на знание компьютеров</h2>
+            
+            <div id="questionsContainer"></div>
+            
+            <div class="test-controls">
+                <button class="btn" id="prevBtn" disabled>Назад</button>
+                <button class="btn" id="nextBtn">Следующий</button>
+                <button class="btn" id="submitBtn" style="display: none;">Завершить тест</button>
+            </div>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <h2>Результаты тестирования</h2>
+            <div id="resultsList"></div>
+            <button class="btn" id="restartBtn">Пройти тест снова</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2023 Тест на знание компьютеров</p>
+    </footer>
+
+    <script src="test.js"></script>
+</body>
+</html>
