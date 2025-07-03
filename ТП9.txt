@@ -1,0 +1,203 @@
+stack = []
+R1 = 0
+R2 = 0
+commands = []
+labels = {}
+def execute():
+    global R1, R2, stack, labels
+    i = 0
+    while i < len(commands):
+        parts = commands[i].strip().split()
+        if not parts:
+            i += 1
+            continue
+
+        cmd = parts[0]
+
+        if cmd == 'push':
+            if len(parts) < 2:
+                print("Ошибка: недостаточно аргументов для push")
+                i += 1
+                continue
+            arg = parts[1]
+            if arg == 'R1':
+                stack.append(R1)
+            elif arg == 'R2':
+                stack.append(R2)
+            else:
+                try:
+                    num = int(arg)
+                    stack.append(num)
+                except ValueError:
+                    print(f"Ошибка: неверный аргумент для push: {arg}")
+            i += 1
+
+        elif cmd == 'pop':
+            if len(parts) < 2:
+                print("Ошибка: недостаточно аргументов для pop")
+                i += 1
+                continue
+            if not stack:
+                print("Стек пуст")
+                i += 1
+                continue
+            val = stack.pop()
+            arg = parts[1]
+            if arg == 'R1':
+                R1 = val
+            elif arg == 'R2':
+                R2 = val
+            else:
+                print(f"Ошибка: неверный регистр для pop: {arg}")
+            i += 1
+
+        elif cmd in ['add', 'sub', 'mul', 'div']:
+            if len(parts) >= 2:
+                arg = parts[1]
+                if not stack:
+                    print("Стек пуст")
+                    i += 1
+                    continue
+                val = stack.pop()
+                if arg == 'R1':
+                    if cmd == 'add':
+                        R1 += val
+                    elif cmd == 'sub':
+                        R1 -= val
+                    elif cmd == 'mul':
+                        R1 *= val
+                    elif cmd == 'div':
+                        if val == 0:
+                            print("Деление на 0 невозможно!")
+                        else:
+                            R1 //= val
+                elif arg == 'R2':
+                    if cmd == 'add':
+                        R2 += val
+                    elif cmd == 'sub':
+                        R2 -= val
+                    elif cmd == 'mul':
+                        R2 *= val
+                    elif cmd == 'div':
+                        if val == 0:
+                            print("Деление на 0 невозможно!")
+                        else:
+                            R2 //= val
+                else:
+                    print(f"Ошибка: неверный регистр для {cmd}: {arg}")
+            else:
+                if cmd == 'add':
+                    if len(stack) < 2:
+                        print("Недостаточно элементов")
+                        i += 1
+                        continue
+                    a = stack.pop()
+                    b = stack.pop()
+                    stack.append(a + b)
+                elif cmd == 'sub':
+                    if len(stack) < 2:
+                        print("Недостаточно элементов")
+                        i += 1
+                        continue
+                    a = stack.pop()
+                    b = stack.pop()
+                    stack.append(b - a)
+                elif cmd == 'mul':
+                    if len(stack) < 2:
+                        print("Недостаточно элементов")
+                        i += 1
+                        continue
+                    a = stack.pop()
+                    b = stack.pop()
+                    stack.append(a * b)
+                elif cmd == 'div':
+                    if len(stack) < 2:
+                        print("Недостаточно элементов")
+                        i += 1
+                        continue
+                    a = stack.pop()
+                    if a == 0:
+                        print("Деление на 0 невозможно!")
+                        i += 1
+                        continue
+                    b = stack.pop()
+                    stack.append(b // a)
+            i += 1
+
+        elif cmd == 'cmp':
+            if R1 > R2:
+                stack.append(1)
+            elif R1 < R2:
+                stack.append(-1)
+            else:
+                stack.append(0)
+            i += 1
+
+        elif cmd == 'mark':
+            if len(parts) < 2:
+                print("Ошибка")
+                i += 1
+                continue
+            label = parts[1]
+            labels[label] = i
+            i += 1
+
+        elif cmd == 'goto':
+            if len(parts) < 2:
+                print("Ошибка")
+                i += 1
+                continue
+            label = parts[1]
+            if label in labels:
+                i = labels[label]
+            else:
+                print(f"Метка {label} не найдена")
+                i += 1
+
+        elif cmd.startswith('if'):
+            if len(parts) < 2:
+                print("Ошибка")
+                i += 1
+                continue
+            if not stack:
+                print("Стек пуст")
+                i += 1
+                continue
+            val = stack.pop()
+            label = parts[1]
+            condition_met = False
+
+            if cmd == 'if=' and val == 0:
+                condition_met = True
+            elif cmd == 'if>' and val > 0:
+                condition_met = True
+            elif cmd == 'if<' and val < 0:
+                condition_met = True
+
+            if condition_met and label in labels:
+                i = labels[label]
+            else:
+                i += 1
+
+        else:
+            print(f"Неизвестная команда: {cmd}")
+            i += 1
+
+
+if __name__ == "__main__":
+    print("Вводите команды. Для завершения - 'exit'.")
+    while True:
+        cmd = input().strip()
+        if cmd == 'exit':
+            break
+        if cmd:
+            commands.append(cmd)
+
+    execute()
+
+    print(f"R1 = {R1}")
+    print(f"R2 = {R2}")
+    if stack:
+        print(f"Вершина стека = {stack[-1]}")
+    else:
+        print("Стек пуст")
